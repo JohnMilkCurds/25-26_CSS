@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tables</title>
+    <style>
+
+        #starters{
+            font-family: Arial, Helvetica, sans-serif;
+            width: 100%;
+            /* border: size style color; */
+            border: 1px solid black;
+            /* B-c makes the lines one*/
+            border-collapse: collapse;
+        }
+
+        #starters td, #starters th {
+            border: 1px solid orange;
+        padding: 8px;
+        }
+        #starters th{
+            background-color: green;
+            color: white;
+        }
+        #starters tr:hover{
+            background-color: #dddd;
+        }
+        #starters tr:nth-child(even){
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+<table id="starters">
+    <tr>
+        <th>Water Starters</th>
+        <th>Fire Starters</th>
+        <th>Grass Starters</th>
+        <th>Electric Starters</th>
+    </tr>
+    <tr>
+        <td> Squirtle</td>
+        <td> Charmander</td>
+        <td> Bulbasaur</td>
+        <td rowspan = "2"> Pikachu</td>
+    </tr>
+    <tr>
+        <td> Mudkip</td>
+        <td> Torchic</td>
+        <td> Treeko</td>
+
+    </tr>
+</table>
+</div>
+</body>
+</html>
