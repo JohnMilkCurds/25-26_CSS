@@ -1,0 +1,40 @@
+.grid-container{
+    width: 1080px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    background-color: lightgray;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+.site-header{
+    margin-top: 20px;
+    grid-column: 1/ span 3;
+    background-color: lightskyblue;
+    text-align: center;
+    padding: 20px;
+    font-family:Arial, Helvetica, sans-serif ;
+    font-size: xx-large;
+}
+.main-nav{
+    height: 300px;
+    padding: 30px;
+    background-color: orange;
+}
+.main-content{
+    padding: 30px;
+    background-color: purple;
+    grid-column: 2;
+    grid-row: 2;
+}
+.site-sidebar{
+    padding: 30px;
+    background-color: #c3c3c3 ;
+    float: right;
+    grid-column: 3;
+}
+.site-footer{
+    background-color: pink;
+    grid-column: 1/span 3;
+    text-align: center;
+}
