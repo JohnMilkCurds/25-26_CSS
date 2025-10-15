@@ -8,83 +8,120 @@
             box-sizing: border-box;
             margin: 0;
         }
+
         .grid-container{
             display: grid;
             grid-template-areas:
-            'header header header header header header'
-            ' menu main main main main right'
-            'footer footer footer footer footer footer';
+                'header header header header header header'
+                'menu main main main main right'
+                'footer footer footer footer footer footer ';
 
             gap: 10px;
             padding: 10px;
         }
 
-        .item1{
-            grid-area: header;
+        .grid-container > div{
+            padding: 10px;
+            font-size: 16px;
         }
 
-        .item1  h1{
+        .item1{
+            grid-area: header;
+            background-color: purple;
             text-align: center;
+            color: #ffffff;
+        }
+
+        .item1 > h1{
             font-size: 40px;
-            background-color: #e774a3
         }
 
         .item2{
             grid-area: menu;
         }
 
-        .item2  ul{
+        .item2 > ul{
             list-style-type: none;
             margin: 0;
             padding: 0;
         }
 
-        .item2 li{
+        .item2 > ul > li {
             padding: 8px;
             margin-bottom: 7px;
-            background-color: lightgray;
-            color: orangered;
+            background-color: #33b5e5;
+            color: #ffffff;
         }
 
-        .item2  li:hover{
-            background-color: green;
+        .item2 > ul > li:hover{
+            background-color: #0099cc;
         }
 
         .item3{
             grid-area: main;
         }
 
-        .item3 p{
+        .item3 > h1{
+            font-size: 30px;
+            margin-bottom: 7px;
+        }
+
+        .item3 > p{
             margin-bottom: 7px;
         }
 
         .item4{
             grid-area: right;
-            border: 2px solid blue;
+            border: 2px solid #0099cc;
             background-color: white;
             padding: 15px;
             color: #000000;
         }
 
-
-
         .item5{
             grid-area: footer;
-            background-color: lightgray;
-            color: white;
+            background-color: #0099cc;
+            color: #ffffff;
             text-align: center;
         }
-
-        @media only screen and (max-width: 600px)
-
-        .grid-container > div{
-            padding: 16px;
-            font-size: 16px;
-
+        @media only screen and (max-width: 600px){
+            body{
+                .item1{ grid-area: 1/ span 6; }
+                .item2{ grid-area: 2/ span 6; }
+                .item3{ grid-area: 3/ span 6; }
+                .item4{ grid-area: 4/ span 6; }
+                .item5{ grid-area: 5/ span 6; }
+                background-color: white;
+            }
         }
 
+        @media only screen and (min-width: 600px){
+            body{
+                .item1{ grid-area: 1/ span 6; }
+                .item2{ grid-area: 2/ span 1; }
+                .item3{ grid-area: 2/ span 4; }
+                .item4{ grid-area: 3/ span 6; }
+                .item5{ grid-area: 4/ span 6; }
+                background-color: orange;
+            }
+        }
 
+        @media only screen and (min-width: 768px){
+            body{
+                .item1{ grid-area: 1/ span 6; }
+                .item2{ grid-area: 2/ span 1; }
+                .item3{ grid-area: 2/ span 4; }
+                .item4{ grid-area: 2/ span 1; }
+                .item5{ grid-area: 3/ span 6; }
+                background-color: red;
+            }
+        }
 
+        @media only screen and (orientation:landscape){
+            body{
+                background-color: lightblue;
+            }
+        }
 
     </style>
 </head>
@@ -93,21 +130,23 @@
     <div class="item1">
         <h1>Chania</h1>
     </div>
+
     <div class="item2">
         <ul>
             <li>The Flight</li>
             <li>The City</li>
             <li>The Island</li>
+            <li>The Food</li>
         </ul>
     </div>
 
     <div class="item3">
-        <h1> The City</h1>
-        <p> Chania is the capital of the Chania region of the Island of Crete</p>
+        <h1>The City</h1>
+        <p>Chania is the capital of the Chania region on the island of Crete.</p>
     </div>
 
     <div class="item4">
-        <h2>Facts</h2>
+        <h2>Facts:</h2>
         <ul>
             <li>Data goes here</li>
             <li>Data goes here</li>
@@ -116,11 +155,10 @@
     </div>
 
     <div class="item5">
-        <p> Resize! see how changes</p>
+        <p>Resize the browser - see how it responds!</p>
     </div>
 
-
-
 </div>
+
 </body>
 </html>
