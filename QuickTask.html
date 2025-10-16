@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quick Task</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+        }
+        .container{
+            display: grid;
+            grid-template-areas:
+            "header header header header header"
+            'navbar navbar navbar navbar logo'
+            'leftbar main main main rightbar'
+            'footer footer footer footer footer';
+            background-color: teal;
+            gap: 10px;
+            padding: 10px;
+        }
+
+        .header{
+            grid-area: header;
+            height: 100px;
+            background-color: gold;
+        }
+        .navbar{
+            grid-area: navbar;
+            height: 50px;
+            background-color: green;
+        }
+        .logo{
+            grid-area: logo;
+            height: 50px;
+            background-color: orange;
+        }
+        .leftbar{
+            grid-area: leftbar;
+            height: 700px;
+            background-color: purple;
+        }
+        .main{
+            grid-area: main;
+            height: 700px;
+            background-color: pink;
+        }
+        .rightbar{
+            grid-area: rightbar;
+            height: 700px;
+            background-color: lightcoral;
+        }
+        .footer{
+            grid-area: footer;
+            height: 50px;
+            background-color: blue;
+        }
+
+
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        Header
+    </div>
+
+    <div class="navbar">
+        Navbar
+    </div>
+
+    <div class="logo">
+        Logo
+    </div>
+
+    <div class="leftbar">
+        Left
+    </div>
+
+    <div class="main">
+        Main
+    </div>
+
+    <div class="rightbar">
+        Right
+    </div>
+
+    <div class="footer">
+        Footer
+    </div>
+
+</div>
+</body>
+</html>
