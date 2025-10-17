@@ -1,0 +1,87 @@
+.grid-container{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-areas:
+        'header header header header header'
+        'nav content content content sidebar'
+        'footer footer footer footer footer';
+    background-color: lightgray;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+.site-header{
+    margin-top: 20px;
+    grid-area: header;
+    background-color: lightskyblue;
+    text-align: center;
+    padding: 20px;
+    font-family:Arial, Helvetica, sans-serif ;
+    font-size: xx-large;
+}
+.main-nav{
+    grid-area: nav;
+    font-size: x-large;
+    padding: 30px;
+    background-color: navy;
+}
+.main-content{
+    font-size: x-large;
+    padding: 30px;
+    background-color: deepskyblue;
+    grid-area: content;
+}
+.site-sidebar{
+    font-size: x-large;
+    padding: 30px;
+    background-color: navy ;
+    float: right;
+    grid-area: sidebar;
+}
+.site-footer{
+    height: 100px;
+    background-color: blue;
+    grid-area: footer;
+    text-align: center;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+@media only screen and (max-width: 600px){
+    .grid-container{
+        background-color: midnightblue;
+    }
+    body{
+        .site-header{grid-area: 1/ span 5}
+        .main-nav{grid-area: 2/ span 5}
+        .main-content{grid-area: 3/ span 5}
+        .site-sidebar{grid-area: 4/ span 5}
+        .site-footer{grid-area: 5/ span 5}
+    }
+}
+
+@media only screen and (min-width: 850px){
+    body{
+        .site-header{grid-area:header}
+        .main-nav{grid-area:nav}
+        .main-content{grid-area:content}
+        .site-sidebar{grid-area:sidebar}
+        .site-footer{grid-area:footer}
+    }
+}
+
+@media only screen and (orientation:landscape){
+    .grid-container{
+        background-color: black;
+        color: white;
+    }
+    body{
+        .site-header{grid-area:header}
+        .main-nav{grid-area:nav}
+        .main-content{grid-area:content}
+        .site-sidebar{grid-area:sidebar}
+        .site-footer{grid-area:footer}
+    }
+}
