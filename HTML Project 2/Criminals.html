@@ -6,26 +6,52 @@
     <style>
 
         .container{
+            display: grid;
+            grid-template-areas:
+                    'header header header mascot'
+                    'Campbells Cento Tuttorosso Heinz'
+                    'footer footer footer footer';
             width: 1080px;
             margin: auto;
         }
         .header{
+            grid-area: header;
             background-color: tomato;
         }
-        .card{
-            width: 25%;
+        .Campbells{
+            grid-area: Campbells;
             box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
             transition: 0.2s;
             float: left;
             margin-left: 5px;
         }
-        .card:hover{
-            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        .Cento{
+            grid-area: Cento;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            transition: 0.2s;
+            float: left;
+            margin-left: 5px;
         }
+        .Tuttorosso{
+            grid-area: Tuttorosso;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            transition: 0.2s;
+            float: left;
+            margin-left: 5px;
+        }
+        .Heinz{
+            grid-area: Heinz;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            transition: 0.2s;
+            float: left;
+            margin-left: 5px;
+        }
+        .mascot{}
         .caption{
             margin: 20px;
             padding: 2px 16px;
         }
+
 
     </style>
 
@@ -36,7 +62,7 @@
         <h1>Criminals Against Mater Kind</h1>
         <h2>The criminals below have done the worst of the worst, and here they will be shamed for the rest of eternity</h2>
     </div>
-    <div class="card">
+    <div class="Campbells">
         <img src="Project_img/Tomato_can.jpg" Alt="Tomato Can">
         <div class="caption">
             Campbell's <br>
@@ -44,7 +70,7 @@
             Sentence: Life in the Well <br>
         </div>
     </div>
-    <div class="card">
+    <div class="Cento">
         <img src="Project_img/Cento.webp" Alt="Tomato Can">
         <div class="caption">
             Cento <br>
@@ -52,7 +78,7 @@
             Sentence: Torture <br>
         </div>
     </div>
-    <div class="card">
+    <div class="Tuttorosso">
         <img src="Project_img/Tuttorosso.webp" Alt="Tomato Can">
         <div class="caption">
             Tuttorosso <br>
@@ -60,7 +86,7 @@
             Sentence: Soupification <br>
         </div>
     </div>
-    <div class="card">
+    <div class="Heinz">
         <img src="Project_img/Heinz.webp" Alt="Tomato Can">
         <div class="caption">
             He Who Shall Not Be Named <br>

@@ -4,33 +4,58 @@
     <meta charset="UTF-8">
     <title>Tomato.com</title>
     <style>
+        *{
+            box-sizing: border-box;
+        }
         .container{
-            width: 1080px;
-            margin: auto
+            display: grid;
+            grid-template-areas:
+                'header header header'
+                'criminals pantheon mind'
+                'senses senses mascot'
+                'footer footer footer';
+            gap: 10px;
+            padding: 10px;
         }
         .header{
             width: 100%;
             height: 200px;
             background-color: tomato;
             padding: 20px;
+            grid-area: header;
         }
-        .content{
-            width: 500px;
-            height: 450px;
-            float: left;
-            margin: 15px;
-            background-color: orange;
-            border: 5px solid tomato;
+        .criminals{
+            padding: 10px;
+            grid-area: criminals;
+            background-color: darkred;
         }
-        .content2{
-            width: 500px;
-            height: 450px;
-            float: left;
-            margin: 15px;
+        .pantheon{
+            padding: 10px;
+            grid-area: pantheon;
+            background-color: palegoldenrod;
+        }
+        .mind{
+            padding: 10px;
+            grid-area: mind;
+            background-color: indianred;
+        }
+        .senses{
+            padding: 10px;
+            grid-area: senses;
+            background-color: white;
+        }
+        .mascot{
+            padding: 10px;
+            grid-area: mascot;
+            background-color: white;
+        }
+        .footer{
+            padding: 10px;
+            height: 50px;
+            grid-area: footer;
+            text-align: center;
             background-color: tomato;
-            border: 5px solid orange;
         }
-
 
 
     </style>
@@ -47,25 +72,27 @@
         </div>
 
 
-    <div class="content">
+    <div class="criminals">
     <a href ="Criminals.html"> <img src ="Project_img/Tomato_can.jpg" alt ="Tomato can"/></a>
         <p>Criminals against Mater kind</p>
         </div>
-    <div class="content2">
-        <a href ="Pantheon.html" alt> <img src ="Project_img/Fancy_gate.webp" alt ="Fancy Door"/></a>
+    <div class="pantheon">
+        <a href ="Pantheon.html"> <img src ="Project_img/Fancy_gate.webp" alt ="Fancy Door"/></a>
         <p>Pantheon of the Mater</p>
     </div>
-    <div class="content2">
+    <div class="mascot">
         <a href ="https://pmc.ncbi.nlm.nih.gov/articles/PMC8869745/" target ="blank"><img src="Project_img/Tomato_mascot.png" alt="Tomato Mascot" width="175"/></a>
         To learn more about us, click my face!
     </div>
-    <div class="content">
+    <div class="mind">
         <a href="Mind_of_the_Mater.html" title ="Mind">Mind of the Mater</a>
     </div>
-    <div class="content">
+    <div class="senses">
         <a href="Senses_of_the_Mater.html" title ="Senses">Senses of the Mater</a>
     </div>
-
+    <div class="footer">
+        2025 mater incorporated
+    </div>
 
 
 
