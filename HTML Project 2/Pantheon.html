@@ -3,37 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <title>Pantheon Of the Maters</title>
+    <style>
+
+        body{
+            box-sizing: border-box;
+            background-color: darkred;
+        }
+        .container{
+            display: grid;
+            grid-template-areas:
+                    'header header header'
+                    'cherry san plum'
+                    'footer footer mascot';
+        }
+        .header{
+            grid-area: header;
+            background-color: tomato;
+            padding: 20px;
+        }
+        .cherry{
+            grid-area: cherry;
+            background-color: lightsalmon;
+        }
+        .san{
+            grid-area: san;
+            background-color: lightcoral;
+        }
+        .plum{
+            grid-area: plum;
+            background-color: lightpink;
+        }
+        .caption{
+            margin: 20px;
+            padding: 2px 16px;
+            background-color: inherit;
+        }
+        a{
+            background-color: inherit;
+            color: white;
+        }
+        .footer{
+            padding: 10px;
+            height: auto;
+            grid-area: footer;
+            text-align: center;
+            background-color: tomato;
+        }
+
+    </style>
 </head>
 <body>
-<table border =1>
-    <tr>
-        <th>Cherry Tomatoes</th>
-        <th>San Marzano</th>
-        <th>Plum Tomatoes</th>
-    </tr>
-    <tr>
-        <td><img src="Project_img/Cherry.jpg" alt="Cherry Tomatoes" width="175"></td>
-        <td><img src="Project_img/San_Marzano.jpg" alt="Cherry Tomatoes" width="175"></td>
-        <td><img src="Project_img/Plum.jpg" alt="Cherry Tomatoes" width="175"></td>
-    </tr>
-    <tr>
-        <td><a href="https://en.wikipedia.org/wiki/Cherry_tomato" title = "More information" target="Blank">More Information</a></td>
-        <td><a href="https://en.wikipedia.org/wiki/San_Marzano_tomato" title = "More information" target ="Blank">More Information</a></td>
-        <td><a href="https://en.wikipedia.org/wiki/Plum_tomato" title = "More information" target ="Blank">More Information</a></td>
-    </tr>
+<div class="container">
+
+    <div class="header">
+        <h1>This is the hall of the greatest maters to grace the face of the planet, it is your duty to respect them.</h1>
+    </div>
+
+    <a href ="Main_page.html"><img src="Project_img/Tomato_mascot.png" alt="Tomato Mascot" width="175"/> </a>
+
+    <div class="cherry">
+        <img src="Project_img/Cherry.jpg" alt="Cherry Tomatoes" width="175">
+        <div class="caption">
+            Cherry Tomatoes <br>
+            <a href="https://en.wikipedia.org/wiki/Cherry_tomato" title = "More information" target="Blank">More Information</a>
+        </div>
+    </div>
+
+    <div class="san">
+        <img src="Project_img/San_Marzano.jpg" alt="Cherry Tomatoes" width="175">
+        <div class="caption">
+            San Marzano <br>
+            <a href="https://en.wikipedia.org/wiki/San_Marzano_tomato" title = "More information" target ="Blank">More Information</a>
+        </div>
+    </div>
+
+    <div class="plum">
+        <img src="Project_img/Plum.jpg" alt="Cherry Tomatoes" width="175">
+        <div class="caption">
+            Plum Tomatoes <br>
+            <a href="https://en.wikipedia.org/wiki/Plum_tomato" title = "More information" target ="Blank">More Information</a>
+        </div>
+    </div>
+
+    <div class="footer">
+        2025 mater incorporated
+    </div>
 
 
 
 
 
 
-</table>
-
-<a href ="Main_page.html"><img src="Project_img/Tomato_mascot.png" alt="Tomato Mascot" width="175"/> </a>
 
 
 
 
 
+
+</div>
 </body>
 </html>
