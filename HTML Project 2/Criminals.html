@@ -4,21 +4,42 @@
     <meta charset="UTF-8">
     <title>Criminals Against Mater Kind</title>
     <style>
-        body{
-            background-color: lightcoral;
-        }
         .container{
             display: grid;
             grid-template-areas:
-                    'header header header mascot'
-                    'Campbells Cento Tuttorosso Heinz'
-                    'footer footer footer footer';
-            width: 1080px;
-            margin: auto;
+                'header header header header'
+                'nav nav nav nav'
+                'Campbells Cento Tuttorosso Heinz'
+                'footer footer footer footer';
+            gap: 10px;
+            padding: 10px;
         }
         .header{
-            grid-area: header;
+            width: 100%;
+            height: 200px;
             background-color: tomato;
+            padding: 20px;
+            grid-area: header;
+        }
+        .nav{
+            grid-area: nav;
+            background-color: indianred;
+        }
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 10px;
+            overflow: hidden;
+        }
+        li{
+            float: left;
+        }
+        li a{
+            color: black;
+            display: inline-block;
+            text-center: center;
+            padding: 14px 16px;
+            text-decoration: none;
         }
         .Campbells{
             background-color: red;
@@ -58,6 +79,13 @@
             padding: 2px 16px;
         }
 
+        .footer{
+            padding: 10px;
+            height: 50px;
+            grid-area: footer;
+            text-align: center;
+            background-color: tomato;
+        }
 
     </style>
 
@@ -65,9 +93,19 @@
 <body>
 <div class="container">
     <div class="header">
-        <h1>Criminals Against Mater Kind</h1>
-        <h2>The criminals below have done the worst of the worst, and here they will be shamed for the rest of eternity</h2>
+        <h1>THIS IS THE REALM OF THE MATERS</h1>
+        <h3>THIS IS WHERE WE WORSHIP THE GOD OF THE MATERS</h3>
     </div>
+
+    <div class="nav">
+        <ul>
+            <li><a href ="Criminals.html">Criminals</a></li>
+            <li><a href ="Pantheon.html">Pantheon</a></li>
+            <li><a href="Mind_of_the_Mater.html" title ="Mind">Mind of the Mater</a></li>
+            <li><a href="Senses_of_the_Mater.html" title ="Senses">Senses of the Mater</a></li>
+        </ul>
+    </div>
+
     <div class="Campbells">
         <img src="Project_img/Tomato_can.jpg" Alt="Tomato Can">
         <div class="caption">
@@ -76,6 +114,7 @@
             Sentence: Life in the Well <br>
         </div>
     </div>
+
     <div class="Cento">
         <img src="Project_img/Cento.webp" Alt="Tomato Can">
         <div class="caption">
@@ -84,6 +123,7 @@
             Sentence: Torture <br>
         </div>
     </div>
+
     <div class="Tuttorosso">
         <img src="Project_img/Tuttorosso.webp" Alt="Tomato Can">
         <div class="caption">
@@ -92,6 +132,7 @@
             Sentence: Soupification <br>
         </div>
     </div>
+
     <div class="Heinz">
         <img src="Project_img/Heinz.webp" Alt="Tomato Can">
         <div class="caption">
@@ -101,8 +142,11 @@
         </div>
     </div>
 
+    <div class="footer">
+        2025 mater incorporated
+    </div>
 
-    <a href ="Main_Page.html"><img src="Project_img/Tomato_mascot.png" alt="Tomato Mascot"/> </a>
+
 </div>
 </body>
 </html>
