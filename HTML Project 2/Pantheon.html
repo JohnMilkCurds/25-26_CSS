@@ -5,20 +5,50 @@
     <title>Pantheon Of the Maters</title>
     <style>
 
-        body{
+        *{
             box-sizing: border-box;
         }
         .container{
             display: grid;
             grid-template-areas:
                     'header header header'
+                    'nav nav nav'
+                    'tag tag tag'
                     'cherry san plum'
-                    'footer footer mascot';
+                    'footer footer footer';
+            gap: 10px;
+            padding: 10px;
         }
         .header{
-            grid-area: header;
+            width: 100%;
+            height: 200px;
             background-color: tomato;
             padding: 20px;
+            grid-area: header;
+        }
+        .nav{
+            grid-area: nav;
+            background-color: indianred;
+        }
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 10px;
+            overflow: hidden;
+        }
+        li{
+            float: left;
+        }
+        li a{
+            color: black;
+            display: inline-block;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .tag{
+            grid-area: tag;
+            background-color: #ff4545;
         }
         .cherry{
             grid-area: cherry;
@@ -43,7 +73,7 @@
         }
         .footer{
             padding: 10px;
-            height: auto;
+            height: 50px;
             grid-area: footer;
             text-align: center;
             background-color: tomato;
@@ -55,10 +85,22 @@
 <div class="container">
 
     <div class="header">
-        <h1>This is the hall of the greatest maters to grace the face of the planet, it is your duty to respect them.</h1>
+        <h1>THIS IS THE REALM OF THE MATERS</h1>
+        <h3>THIS IS WHERE WE WORSHIP THE GOD OF THE MATERS</h3>
     </div>
 
-    <a href ="Main_page.html"><img src="Project_img/Tomato_mascot.png" alt="Tomato Mascot" width="175"/> </a>
+    <div class="nav">
+        <ul>
+            <li><a href ="Main_Page.html">Main Page</a></li>
+            <li><a href ="Criminals.html">Criminals</a></li>
+            <li><a href ="Pantheon.html">Pantheon</a></li>
+            <li><a href="Senses_of_the_Mater.html" title ="Senses">Senses of the Mater</a></li>
+        </ul>
+    </div>
+
+    <div class="tag">
+        <h4>This is the hall of the Maters, it may look small, but these are the best of the best. It is our honor to present them here</h4>
+    </div>
 
     <div class="cherry">
         <img src="Project_img/Cherry.jpg" alt="Cherry Tomatoes" width="175">
@@ -87,15 +129,6 @@
     <div class="footer">
         2025 mater incorporated
     </div>
-
-
-
-
-
-
-
-
-
 
 
 

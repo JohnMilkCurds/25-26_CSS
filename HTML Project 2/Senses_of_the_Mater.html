@@ -4,28 +4,68 @@
     <meta charset="UTF-8">
     <title>Senses of the Mater</title>
     <style>
-
-        body{
-            background-color: lightcoral;
+        *{
+            box-sizing: border-box;
         }
         .header{
+            width: 100%;
+            height: 200px;
+            background-color: tomato;
+            padding: 20px;
             grid-area: header;
         }
         .container{
             display: grid;
             grid-template-areas:
                 'header header header'
-                'blank form blank';
-            width: 1080px;
+                'nav nav nav'
+                'tag tag tag'
+                'form form form'
+                'footer footer footer';
             margin: auto;
+            gap: 10px;
+            padding: 10px;
+        }
+        .nav{
+            grid-area: nav;
+            background-color: indianred;
+        }
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 10px;
+            overflow: hidden;
+        }
+        li{
+            float: left;
+        }
+        li a{
+            color: black;
+            display: inline-block;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .tag{
+            grid-area: tag;
+            background-color: #ff4545;
         }
         .form{
+            background-color: red;
             grid-area: form;
+            grid-column: 1/ span 3;
             width: 30%;
             box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
             transition: 0.2s;
             float: right;
             margin-left: 30px;
+        }
+        .footer{
+            padding: 10px;
+            height: 50px;
+            grid-area: footer;
+            text-align: center;
+            background-color: tomato;
         }
 
     </style>
@@ -33,8 +73,23 @@
 <body>
 <div class="container">
     <div class="header">
-        <h1>If you or a loved one has witness a Mater crime, or would like to join our cause, contact us!</h1>
+        <h1>THIS IS THE REALM OF THE MATERS</h1>
+        <h3>THIS IS WHERE WE WORSHIP THE GOD OF THE MATERS</h3>
     </div>
+
+    <div class="nav">
+        <ul>
+            <li><a href ="Main_Page.html">Main Page</a></li>
+            <li><a href ="Criminals.html">Criminals</a></li>
+            <li><a href ="Pantheon.html">Pantheon</a></li>
+            <li><a href="Senses_of_the_Mater.html" title ="Senses">Senses of the Mater</a></li>
+        </ul>
+    </div>
+
+    <div class="tag">
+        <h4>If you or a loved one has experienced a mater crime, or you wish to join us, fill out the form below.</h4>
+    </div>
+
 
     <div class="form">
         <form action ="Main_Page.html" method = "GET">
@@ -43,7 +98,7 @@
             <label for="phone">Phone: </label><input type="tel" name="phone" id = "phone" pattern ="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder ="123-456-7890"/> <br />
 
             <input type ="checkbox" name="EmailConsent" id="EmailConsent" checked>
-            <label for="EmailConsent">May we send you ZIP bombs?:</label> <br />
+            <label for="EmailConsent">May we send you monthly shipments of Mater seeds?:</label> <br />
 
 
 
@@ -51,6 +106,12 @@
         <input type="submit" /> <br />
         </form>
     </div>
+
+    <div class="footer">
+        2025 mater incorporated
+    </div>
+
+
 </div>
 </body>
 </html>

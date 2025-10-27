@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <title>Criminals Against Mater Kind</title>
     <style>
+        *{
+            box-sizing: border-box;
+        }
         .container{
             display: grid;
             grid-template-areas:
                 'header header header header'
                 'nav nav nav nav'
+                'tag tag tag tag'
                 'Campbells Cento Tuttorosso Heinz'
                 'footer footer footer footer';
             gap: 10px;
@@ -37,9 +41,13 @@
         li a{
             color: black;
             display: inline-block;
-            text-center: center;
+            text-align: center;
             padding: 14px 16px;
             text-decoration: none;
+        }
+        .tag{
+            grid-area: tag;
+            background-color: #ff4545;
         }
         .Campbells{
             background-color: red;
@@ -99,11 +107,15 @@
 
     <div class="nav">
         <ul>
+            <li><a href ="Main_Page.html">Main Page</a></li>
             <li><a href ="Criminals.html">Criminals</a></li>
             <li><a href ="Pantheon.html">Pantheon</a></li>
-            <li><a href="Mind_of_the_Mater.html" title ="Mind">Mind of the Mater</a></li>
             <li><a href="Senses_of_the_Mater.html" title ="Senses">Senses of the Mater</a></li>
         </ul>
+    </div>
+
+    <div class="tag">
+        <h4>These are the worst of the worst, and they will be shamed here until the end of days</h4>
     </div>
 
     <div class="Campbells">

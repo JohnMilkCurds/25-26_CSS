@@ -12,6 +12,7 @@
             grid-template-areas:
                 'header header header'
                 'nav nav nav'
+                'tag tag tag'
                 'mascot mascot mascot'
                 'footer footer footer';
             gap: 10px;
@@ -40,9 +41,13 @@
         li a{
             color: black;
             display: inline-block;
-            text-center: center;
+            text-align: center;
             padding: 14px 16px;
             text-decoration: none;
+        }
+        .tag{
+            grid-area: tag;
+            background-color: #ff4545;
         }
         .mascot{
             padding: 10px;
@@ -73,18 +78,20 @@
 
     <div class="nav">
         <ul>
+            <li><a href ="Main_Page.html">Main Page</a></li>
             <li><a href ="Criminals.html">Criminals</a></li>
             <li><a href ="Pantheon.html">Pantheon</a></li>
-            <li><a href="Mind_of_the_Mater.html" title ="Mind">Mind of the Mater</a></li>
             <li><a href="Senses_of_the_Mater.html" title ="Senses">Senses of the Mater</a></li>
         </ul>
     </div>
+    <div class="tag">
+        <h4>Welcome to our official website! To get started, explore some of the tabs above, or Marcus the Mater to learn more about our kind.</h4>
+    </div>
 
-
-        <div class="mascot">
-            <a href ="https://pmc.ncbi.nlm.nih.gov/articles/PMC8869745/" target ="blank"><img src="Project_img/Tomato_mascot.png" alt="Tomato Mascot" width="175"/></a>
-            To learn more about us, click my face!
-        </div>
+    <div class="mascot">
+        <a href ="https://pmc.ncbi.nlm.nih.gov/articles/PMC8869745/" target ="blank"><img src="Project_img/Tomato_mascot.png" alt="Tomato Mascot" width="175"/></a>
+        To learn more about us, click my face!
+    </div>
 
 
     <div class="footer">
